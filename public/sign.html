@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>注册</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <!-- iconfont -->
+    <style type="text/css">
+        @font-face {font-family: "iconfont";
+          src: url('//at.alicdn.com/t/font_1824105_xvsqm2ad8pk.eot?t=1589695726976'); /* IE9 */
+          src: url('//at.alicdn.com/t/font_1824105_xvsqm2ad8pk.eot?t=1589695726976#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAOgAAsAAAAAB7wAAANRAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDHAqCeIJIATYCJAMQCwoABCAFhG0HRRu3BsiuMYUxdrXIBuMwA0Um98hW9MI3P5yLePh3v/K+JDOb/bNEBUILpKtWllizqgRS5Cp7KjQJTYodO9L/R/+qzELMkvh4yWTH+VkA10mVUDVmNd2huy7ggqsGG3B5kMEg9Dcm4xmHzE/W0bf5xyLr3OOrmz7LzaIMOGa6FM9b8JyikiJCIwEHNh1YJ65BBryBPJD/cjjzKjy6zhNoLJRJt7+5cxC5Kci0QFxkVEJuKZNSUxiq0C1ZW8QDqOlmeob7/u/jt63hRtLJyNxDp5tUVPstwj6Qt9otugTi8RwQN5GxHlKIs6Wu4xzD6HqOGn2wk52QqkqM1VNmH2hbLNmLqlKVvv94iegi+QNgO8Qy3yJsUawuA4MA9QDkSfBCNDXMuQh5gGjm+x+QhFg11zXx+vl76He7X7w7ueoPu/H648jth9sPPE7e977f8Tfvb//Au4+zDx+MN+efbd0P9hw8f/nKbc/T6RGUOvj0oU534/niyUqoIVSjl7ZDQi52kEocnqDzFQwqT/CFCaWgCK3arzju1gb66Pbnrv1j825u/j11wpHN/y021SGfpQsSfHrPlS/ypTIkXwwUt5RHX624iP0+ec3w3Vfx0fGvRv9/mofH0JM/V/yCfN+7Q/HE17SCh3bkYXoBLUfFl+LiHsgDsvUaD9JIQGwPGUQl1/JDCEIrP/2H9DT9gnzS4et/+hsHD39vOOJb+b9awAf7/3xvq9BP9LLFrcV/RdyypRhSYi5Fk9ki01Ps6T0lodHgXyQZ82MMzWTrfEI1GSPpswBZtZxYqOvR0bMdXdUuNNZp2dwzjnMUpR9r7SOEEU+RDHmNbMRzYqF+R8eU3+gaCUc0ZiNwz56VwTwaOEgCVCwvY6ZYzIRZhUdQ2A903ijxpNSnDQPXWADnZedmEy1gBj7GAm2B5gtBMOEWE25Gl4HRaMFWbpkDRWTrhbCW5+SQsjdlKxYT8rAPByQCUGGyZRijsDAjbnfBI/f9foCaZyThNRV1/mGA07D+sTzZclsQW1TmVhXXco1mAZVPEAiM4CxMsGbkAEYatcCs5aPmAIWQTd8jbFUuB3cibVXZ82tMD1Ao1kD2LJEiR4mO/tNgXmKSmea5EHeofp650HnJLDOEAAAAAA==') format('woff2'),
+          url('//at.alicdn.com/t/font_1824105_xvsqm2ad8pk.woff?t=1589695726976') format('woff'),
+          url('//at.alicdn.com/t/font_1824105_xvsqm2ad8pk.ttf?t=1589695726976') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+          url('//at.alicdn.com/t/font_1824105_xvsqm2ad8pk.svg?t=1589695726976#iconfont') format('svg'); /* iOS 4.1- */
+        }
+
+        .iconfont {
+          font-family: "iconfont" !important;
+          font-size: 1rem;
+          font-style: normal;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        .iconfenxiang1:before {
+          content: "\e639";
+        }
+
+        .iconfanhui:before {
+          content: "\e653";
+        }
+
+        .iconguanbi:before {
+          content: "\e61a";
+        }
+    </style>
+    <script>        
+        (function (doc, win) {    
+            var docEl = doc.documentElement,    
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',    
+            recalc = function () {    
+            var clientWidth = docEl.clientWidth;    
+            if (!clientWidth) return;    
+            docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';    
+        };    
+        if (!doc.addEventListener) return;    
+        win.addEventListener(resizeEvt, recalc, false);    
+        doc.addEventListener('DOMContentLoaded', recalc, false);    
+        })(document, window);    
+    </script>
+    <style type="text/css">
+    	* {
+    		padding: 0px;
+    		margin: 0px;
+    	}
+    	html {
+    		font-size: 20px;
+            height: 100%;
+            background-image: url('./background.png');
+            background-size: cover;
+            background-position: 0 2rem;
+    	}
+
+        #tabHead {
+            height: 2rem;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 0.25rem 0rem;
+            font-size: 1rem;
+            position: relative;
+            overflow: hidden;
+            line-height: 1.5rem; 
+            background: #fff;
+        }
+        #tabHead .left,#tabHead .right {
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            z-index: 1;
+        }
+        #tabHead .left {
+            left: 0rem;
+        }
+        #tabHead .right {
+            right: 0rem;
+        }
+        #tabHead .back,#tabHead .close,#tabHead .share {
+            display: inline-block;
+            padding: 0rem 0.25rem 0rem 0.5rem;
+            cursor: pointer;
+            transform: all 300ms;
+        }
+        #tabHead .share{
+            padding: 0rem 0.5rem 0rem 0.25rem;
+        }
+        #tabHead .title {
+            width: 100%;
+            text-align: center;
+        }
+    	.box {
+          position: absolute;
+          height: calc( 100vh - 7rem );
+          top: 4.5rem;
+          left: 1.3rem;
+          right: 1.3rem;
+          box-sizing: border-box;
+          margin: auto;
+          padding: 1.25rem 0.75rem;
+          background-color: rgba(242,242,242,0.4);
+    	}
+    	.box .btns {
+    		width: 100%;
+    		text-align: center;
+            overflow: hidden;
+    	}
+    	.box .btns .btn {
+            width: 3.53rem;
+            height: 2.4rem;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-bottom: 1.25rem;
+            line-height: 2.4rem;
+    		text-align: center;
+    		border: solid 0.05rem rgba(0,0,0,.2);
+            float: left;
+            background:rgba(242,242,242,1);
+            border-radius:4px;
+    	}
+        .box .btns .btn.active {
+            background: rgba(43,95,195);
+            color: #fff;
+        }
+    	.box .btns .btn:first-child {
+    		margin-right: 0.5rem;
+    	}
+    	.box .btns .btn:last-child {
+    		margin-left: 0.5rem;
+    	}
+    	.box .btns .btn.active {
+    		color: #fff;
+    		background: #5E43FA;
+    		border-color: #5E43FA;
+    	}
+    	.box .inputs {
+    		width: 100%;
+    	}
+    	.box .inputs .item {
+    		text-align: center;
+            height: 2.3rem;
+    		margin-bottom: 0.75rem;
+    	}
+    	.box .inputs .label {
+            font-size: 0.8rem;
+    		text-align: left;
+    		display: inline-block;
+    		width: 30%;
+    	}
+    	.box .inputs input {
+    		width: 100%;
+            height: 2.3rem;
+            font-size: 0.6rem;
+            padding: 0.65rem 0.5rem;
+    		box-sizing: border-box;
+            border-radius: 1.25rem;
+            border: 1px solid rgba(255,255,255,1);
+            color: #fff;
+            background: none;
+    	}
+        .box .inputs input::-webkit-input-placeholder {
+            color: #fff;
+        }
+        .box .inputs input::-moz-placeholder {
+            color: #fff;
+        }
+        .box .inputs input::-ms-input-placeholder {
+            color: #fff;
+        }
+        .box .inputs .codeInput {
+            text-align: left;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            overflow: hidden;
+        }
+        .box .inputs .codeInput input {
+            width: 7rem;
+            height: 100%;
+            float: left;
+        }
+        .box .inputs .sendCode {
+            color: #FD3B44;
+            width: 4.6rem;
+            margin-left: 0.3rem;
+            text-align: center;
+            float: left;
+            font-size: .6rem;
+            background: none;
+            height: 2.3rem;
+            font-size: 0.6rem;
+            padding: 0.65rem 0.5rem;
+            box-sizing: border-box;
+            border-radius: 1.25rem;
+            border: 1px solid rgba(255,255,255,1);
+        }
+        .box .inputs .sendCode.hide {
+            display: none;
+        }
+    	.box .footer {
+    		width: 14.65rem;
+    		position: absolute;
+    		left: 50%;
+    		bottom: 1.25rem;
+    		transform: translate(-50%, 0);
+    	}
+    	.box .footer .text {
+    		margin-bottom: 1rem;
+    		font-size: .6rem;
+    	}
+    	.box .footer .button {
+    		width: 80%;
+            margin: auto;
+            border-radius: 2.6rem;
+    		text-align: center;
+    		background: #5E43FA;
+    		color: #fff;
+    		padding: .4rem;
+            font-size: 0.8rem;
+    	}
+    </style>
+</head>
+<body>
+<div id="tabHead">
+    <div class="left">
+        <div class="back">
+            <i class="iconfont">&#xe653;</i>
+        </div>
+        <div class="close">
+            <i class="iconfont">&#xe61a;</i>
+        </div>
+    </div>
+    <div class="title">注册</div>
+</div>
+<div class="box">
+	<div class="btns">
+		<div class="btn" name="1">移动</div>
+		<div class="btn" name="2">联通</div>
+		<div class="btn" name="3">电信</div>
+	</div>
+	<div class="inputs">
+		<div class="item">
+			<input id="name" type="text" placeholder="请输入姓名">
+		</div>
+		<div class="item">
+			<input id="phone" type="text" placeholder="请输入手机">
+		</div>
+        <div class="item">
+            <div class="codeInput">
+            <input id="code" type="text" placeholder="请输入验证码">
+            <div class="sendCode send">获取验证码</div>
+            <div class="sendCode hide time" data-time="60">60s</div>
+            </div>
+        </div>
+	</div>
+	<div class="footer">
+		<div class="button submit">提交</div>
+	</div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+$(function() {
+    // 服务器地址
+    const HTTP = 'http://testapi.cailing.meisheapp.com';
+
+    var codeInterval;
+
+    var code = '',
+        operator = '',
+        company_pid = getUrlParam('company_pid'),
+        clientHeight = document.documentElement.clientHeight;
+
+    // 解决底部定位上升
+    window.onresize = function() {
+      if(clientHeight > document.documentElement.clientHeight) {
+        $('.footer').hide();
+      }else{
+        $('.footer').show();
+      }
+    }
+
+    // 返回
+    $('#tabHead .back').on('click', function() {
+        window.history.back(-1);
+    });
+
+    // 关闭
+    $('#tabHead .close').on('click', function() {
+        window.open("about:blank","_self").close();
+    });
+
+    // 选择运营商
+    $('.btn').on('click', function() {
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+
+        operator = $(this).attr('name');
+    });
+
+    // 姓名验证
+    $('#name').on('change', function() {
+        let val = $(this).val();
+
+        if (val.length > 8) {
+            alert('姓名不可超过8个字符')
+            return
+        }
+        if (!detection(1, val)) {
+            alert('姓名只可输入中文')
+            return
+        }
+    });
+
+    // 手机号验证
+    $('#phone').on('change', function() {
+        let val = $(this).val();
+        let is = detection(0, val);
+
+        if (!is) {
+            alert('请重新输入手机号')
+        }
+    });
+
+    // 发送验证码
+    $('.sendCode.send').on('click', function() {
+        let isPhone = detection(0, $('#phone').val());
+
+        if (!isPhone) {
+            alert('请重新输入手机号');
+            return
+        }
+
+        $.ajax({
+            type: 'get',
+            data: {
+              phone: $('#phone').val(),
+              type: 1
+            },
+            url: HTTP + '/sms/send',
+            success(res) {
+                if (res.errNo == 0) {
+                    $('.sendCode.time').removeClass('hide');
+                    $('.sendCode.send').addClass('hide');
+
+                    codeInterval = setInterval(function() {
+                        let time = $('.sendCode.time').data('time');
+
+                        if (time < 0) {
+                            clearInterval(codeInterval);
+                            $('.sendCode.send').removeClass('hide');
+                            $('.sendCode.time').addClass('hide');
+                        }
+                        else {
+                            $('.sendCode.time').attr("data-time", time - 1).text(time - 1);
+                        }
+                    }, 1000)
+                    alert('验证码已发送')
+                } else {
+                    alert(res.message)
+                }
+            }
+        })
+    });
+
+    // 提交
+    $('.submit').on('click', function() {
+        var data = {
+            user_name: $('#name').val(),
+            telephone: $('#phone').val(),
+            verification_code: $('#code').val(),
+            telephone_type: operator,
+            company_id: company_pid
+        };
+
+        if (data.telephone_type == "") {
+            alert('请选择运营商')
+            return
+        }
+        if (!detection(1, data.user_name) || data.user_name.length > 8 || data.user_name.length == 0) {
+            alert('请重新输入姓名')
+            return
+        }
+        if (!detection(0, data.telephone)) {
+            alert('请重新输入手机号')
+            return
+        }
+        if (data.verification_code == '') {
+            alert('请输入验证码')
+            return
+        }
+
+        $.ajax({
+            type: 'post',
+            url: HTTP + '/User/add',
+            data: data,
+            success(res) {
+                if (res.errNo == 0) {
+                    alert('已提交')
+                } else {
+                    alert(res.message)
+                }
+            }
+        })
+    })
+
+    // 验证 
+    function detection (t, val, fn) {
+        let is = false;
+        switch(t) {
+            // 手机号
+            case 0:
+                is = /^1[3456789]\d{9}$/.test(val);
+                break;
+            // 仅中文
+            case 1:
+                is = !(/[^\u4E00-\u9FA5]/g.test(val));
+                break;
+            // 仅字母
+            case 2:
+                is = !(/[^a-z]|[^A-Z]/g.test(val));
+                break;
+        }
+
+        if (is && fn) fn();
+        
+        return is;
+    }
+    //获取url中的参数
+    function getUrlParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+        var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+        if (r != null) return unescape(r[2]); return null; //返回参数值
+    }
+})
+</script>
