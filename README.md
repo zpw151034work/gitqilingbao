@@ -47,5 +47,9 @@ npm run build
 ## 配置
 
 	1、config 文件 HTTP 属性为服务器地址
+<<<<<<< HEAD
 	2、http.js 文件为axios请求二次封装接口
+=======
+	2、http.js 文件为axios请求二次封装封装封装封装  
+>>>>>>> test
 # gitqilingbao
